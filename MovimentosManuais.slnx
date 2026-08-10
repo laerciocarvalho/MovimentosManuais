@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="MovimentosManuais.Application/MovimentosManuais.Application.csproj" Id="78722a9b-f7ca-4c4c-b4e0-33f148deb4a8" />
+    <Project Path="MovimentosManuais.Domain/MovimentosManuais.Domain.csproj" Id="0190a7df-d496-4250-b918-eb791b11267b" />
+    <Project Path="MovimentosManuais.Infrastructure/MovimentosManuais.Infrastructure.csproj" Id="240a6937-df31-4a68-9dec-53c03e9908a0" />
+    <Project Path="MovimentosManuais.Web/MovimentosManuais.Web.csproj" Id="57d9064a-021f-4e94-aff3-ca1827b27e69" />
+  </Folder>
+</Solution>

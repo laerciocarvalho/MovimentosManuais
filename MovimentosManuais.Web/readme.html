@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Leia-me!</title>
+    <style type="text/css">
+        @page {
+            size: 8.5in 11in;
+            margin: 1in
+        }
+
+        p {
+            color: #000000;
+            margin-bottom: 0.1in;
+            direction: ltr;
+            orphans: 2;
+            widows: 2;
+            line-height: 115%;
+            background: transparent
+        }
+
+            p.western {
+                font-size: 11pt;
+                so-language: pt-BR;
+                font-family: "Calibri", sans-serif
+            }
+
+            p.cjk {
+                font-family: "Calibri", sans-serif;
+                font-size: 11pt
+            }
+
+            p.ctl {
+                font-size: 11pt;
+                font-family: "Arial", sans-serif;
+                so-language: ar-SA
+            }
+    </style>
+</head>
+<body lang="en-US" text="#000000" link="#000080" vlink="#800000" dir="ltr">
+    <p lang="pt-BR" style="margin-bottom: 0.11in; line-height: 107%">
+        Leandro, segue o desafio proposto na entrevista da sexta-feira.
+    </p>
+    <ol>
+        <li>
+            <p lang="pt-BR" style="margin-bottom: 0.11in; line-height: 107%">
+                <b>Linguagem:</b> C#. <b>Ambiente de desenvolvimento:</b> Visual Studio 2026 com .NET Framework 4.8 (para dar suporte ao WebForms)
+            </p>
+        </li>
+        <li>
+            <p lang="pt-BR" align="justify" style="line-height: 107%; margin-bottom: 0.11in">
+                <b>UI:</b> Admito que o ideal seria a parte da UI ter sido gerenciada pelo Angular, mas prezando pela rapidez dentro do que
+                tenho mais familiaridade (Angular faz parte dos meus estudos, e	avançando), e para entregar o desafio em um fim de semana, preferi
+                fazer uso do meu velho conhecido ASP.NET WebForms, para entregar rápido usando uma tecnologia que também é suportada pelo cliente.
+            </p>
+        </li>
+        <li>
+            <p lang="pt-BR" align="justify" style="line-height: 107%; margin-bottom: 0.11in">
+                <b>Back-end: </b>para separar regras de negócio dos detalhes técnicos, fiz uso da Clean Architecture, que estou bem acostumado para a parte do back-end por causa dos últimos projetos que atuei.
+            </p>
+        </li>
+    </ol>
+    <p lang="pt-BR" style="margin-bottom: 0.11in; margin-left: 0.5in; line-height: 107%">
+        <b>3.1)</b> Banco de Dados: SQL Server
+    </p>
+    <p lang="pt-BR" align="justify" style="margin-bottom: 0.11in; margin-left: 0.5in; line-height: 107%">
+        <b>3.2)</b> Persistência: ADO.NET usando AddWithValue. Com parâmetros, o valor digitado pelo usuário é tratado como dado, e não como um pedaço do comando SQL. Mesmo que alguém tente injetar código malicioso, o banco não executa.
+    </p>
+    <p lang="pt-BR" align="justify" style="margin-bottom: 0.11in; line-height: 107%">
+        Clean Architecture com ASP.NET WebForms não é o casamento perfeito. WebForms tem a tendência do acoplamento forte com o Code-Behind. Mas elenquei um “diplomata” para intermediar os dois mundos: o MVP (Model-View-Presenter), que é a mesma abordagem que eu adotaria se o desafio fosse em Windows Forms. Na verdade, Model-View-Presenter já era uma boa prática desde os “anos dourados” do WebForms, antes do .NET Core e dos Controllers.
+    </p>
+    <p lang="pt-BR" align="justify" style="margin-bottom: 0.11in; line-height: 107%">
+        Executem o script que está na pasta ScriptsDB, ajustem para a connection string correta no arquivo web.config, e...
+    </p>
+    <p lang="pt-BR" align="justify" style="margin-bottom: 0.11in; line-height: 107%">
+        <i>Espero que vocês se divirtam analisando o meu código tanto quanto eu me diverti desenvolvendo.</i>
+    </p>
+    <p><a href="MovimentosManuaisHome.aspx">Voltar</a></p>
+</body>
+</html>
